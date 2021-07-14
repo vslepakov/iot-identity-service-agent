@@ -10,7 +10,7 @@ It is also important to understand [different identity types and available authn
 
 ## Setup
 The implementation is tested on *Raspberry Pi 3 B+* with the [*Infineon Optiga SLB9670 TPM 2.0*](https://www.infineon.com/cms/en/product/security-smart-card-solutions/optiga-embedded-security-solutions/optiga-tpm/slb-9670vq2.0/)  
-Azure IoT Edentity Service is configured to use PKCS#11 integration with this TPM chip and to request certificate through [EST](https://datatracker.ietf.org/doc/html/rfc7030).  
+Azure IoT Edentity Service is configured to use PKCS#11 integration with this TPM chip and to request certificate through [EST](https://datatracker.ietf.org/doc/html/rfc7030). 
 For details on how to configure this refer to [this repo](https://github.com/arlotito/iot-edge-1.2-tpm/blob/main/step-by-step.md).  
 
 ![The Big Picture](./images/big-picture.PNG)
@@ -34,6 +34,6 @@ This demonstrates how to implement a custom IoT agent using device identities wi
 
 [This GitHub issue](https://github.com/Azure-Samples/azure-iot-samples-csharp/issues/61) was absolutely helpful to understand what needs to be done. 
 
-> *Hint:* Depending on the CPU architecture the path to *libssl* might need to be adapted for [here](./Device.Identity.x509/NativeMethods.cs).  
-> The path can be found using ```ldconfig -p|grep ssl```  
-> Also one needs to make sure that the OpenSSL version used by .NET corresponds to the *SafeEvpPKeyHandle.OpenSslVersion*
+> *Hint:*  
+> - Depending on the CPU architecture the path to *libssl* might need to be adapted for [here](./Device.Identity.x509/NativeMethods.cs). The path can be found using ```ldconfig -p|grep ssl```  
+> - Also one needs to make sure that the OpenSSL version used by .NET corresponds to the *SafeEvpPKeyHandle.OpenSslVersion*
