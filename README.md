@@ -16,7 +16,7 @@ For details on how to configure this refer to [this repo](https://github.com/arl
 ![The Big Picture](./images/big-picture.PNG)
 
 ## Run it
-To run these samples, you'll need to follow this steps:
+To run these samples, you'll need to follow these steps:
 - Setup your Cloud services (DPS and IoT Hub).
 - [Installthe Azure IoT Identity Service](https://azure.github.io/iot-identity-service/installation.html)
 - [Configure it](https://azure.github.io/iot-identity-service/installation.html). If you want to use it with an HSM and/or EST, refer to [this repo](https://github.com/arlotito/iot-edge-1.2-tpm/blob/main/step-by-step.md).
