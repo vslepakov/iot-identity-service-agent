@@ -1,0 +1,25 @@
+[package]
+name = "identity_svc_agent"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+url = "2"
+log = "0.4"
+env_logger = "0.10.0"
+urlencoding = "2.1.2"
+base64 = "0.20"
+paho-mqtt = "0.11.1"
+tokio = { version = "1", features = ["macros", "parking_lot", "rt-multi-thread", "signal", "sync", "time"] }
+
+aziot-identity-client-async = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+aziot-identity-common = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+aziot-identity-common-http = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+http-common = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+
+aziot-key-client = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+aziot-key-client-async = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+aziot-key-common = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
+aziot-key-common-http = { git = "https://github.com/Azure/iot-identity-service", branch = "main" }
